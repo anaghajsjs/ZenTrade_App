@@ -904,8 +904,12 @@ label{
   width: 80%;
   margin: 90px auto 90px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-size: 8px;
   text-align: center;
+=======
+  font-size: 33px;
+>>>>>>> FETCH_HEAD
 =======
   font-size: 33px;
 >>>>>>> FETCH_HEAD
@@ -922,7 +926,10 @@ label{
   background:#2980b9;
   /* Placements */
 <<<<<<< HEAD
+<<<<<<< HEAD
   height: 52px;
+=======
+>>>>>>> FETCH_HEAD
 =======
 >>>>>>> FETCH_HEAD
 }
@@ -950,8 +957,12 @@ label{
 @media only screen and (min-width: 520px) {
   .cv {
 <<<<<<< HEAD
+<<<<<<< HEAD
     font-size: 14px;
     text-align: center;
+=======
+    font-size: 16px;
+>>>>>>> FETCH_HEAD
 =======
     font-size: 16px;
 >>>>>>> FETCH_HEAD
