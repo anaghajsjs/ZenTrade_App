@@ -747,8 +747,8 @@ label{
     .mobile-custom a >span
     {
         font-size:30px!important;
-        width: 35%;
-        margin: auto;
+        /*width: 35%;
+        margin: auto;*/
         color: #000;
     }
     
@@ -789,8 +789,8 @@ label{
     .mobile-custom a >span
     {
     font-size:26px!important;
-    width: 45%;
-    margin: auto;
+    /*width: 45%;
+    margin: auto;*/
     color: #000;
     }
     
@@ -831,8 +831,8 @@ label{
     .mobile-custom a >span
     {
     font-size:22px!important;
-    width: 55%;
-    margin: auto;
+    /*width: 55%;
+    margin: auto;*/
     color: #000;
     }
     
@@ -887,8 +887,8 @@ label{
     .mobile-custom a >span
     {
     font-size:18px!important;
-    width: 65%;
-    margin: auto;
+    /*width: 65%;
+    margin: auto;*/
     color: #000;
     }
     
@@ -2347,4 +2347,10 @@ use translate instead of translate3d for the first move.
   animation: fx-overlay-reverse .8s 1 ease-in backwards;
   -webkit-animation: fx-overlay-reverse .8s 1 ease-in backwards;
   -moz-animation: fx-overlay-reverse .8s 1 ease-in backwards;
+}
+
+.Left_D{
+    width: 30%;
+    height: 30%;
+    margin: auto;
 }
