@@ -733,6 +733,15 @@ label{
         margin-top:10px;
 	}
         
+.bgs_vis{
+	background-color: rgba(255, 255, 255, 1);
+        color: rgba(0, 0, 0, 1);
+	text-align:justify;
+	padding:15px;
+        margin-top:10px;
+        display:  none;
+	}
+        
 .bgsofr{
 	background-color: rgba(255, 255, 255, 1);
         color: rgba(0, 0, 0, 1);
@@ -2403,4 +2412,8 @@ use translate instead of translate3d for the first move.
     text-align:left;
     font-size: 3vw !important;
     text-align: justify;
+}
+
+.button-show{
+    color: white;
 }
