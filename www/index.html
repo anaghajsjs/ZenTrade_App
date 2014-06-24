@@ -293,7 +293,7 @@
                             <div style="float: left; width:60%;">
                                 <h2>Invoice No : EL-783281/010</h2>
                                 <p>Invoice Date : 19 April 2014</p></br>
-                                <p>Status : Paid</p>
+                                <p>Status : Pending</p>
                             </div>
                             <div style="float: right; width:20%;">
                                 <img src="images/arrow.png" align="middle" style="float: right; vertical-align: middle !important; margin-top: 30px;" alt=""/>
@@ -338,7 +338,7 @@
                             <div style="float: left; width:60%;">
                                 <h2>Invoice No : EL-783281/001</h2>
                                 <p>Invoice Date : 10 January 2014</p></br>
-                                <p>Status : Paid</p>
+                                <p>Status : Pending</p>
                             </div>
                             <div style="float: right; width:20%;">
                                 <img src="images/arrow.png" align="middle" style="float: right; vertical-align: middle !important; margin-top: 30px;" alt=""/>
@@ -494,18 +494,18 @@
                             </div>
                             <div style="clear: both"></div>
                             <div class="ui-grid-solo btn-group">
-                                <div class="ui-block-a btn-style">
+                                
                                     <span class="btn-blue">
                                         <button type="submit">search</button>
                                     </span>
-                                </div>
+                               
                             </div>
                         </div>
                     </form>
                     </div>
                     <div style="clear: both;"></div>
                     </br>
-                    <div class="bgs">
+                    <div class="bgs_vis" id="mydiv" style="display: none">
                         <h3 class="Specs">Shipment Details</h3>
                         </br>
                         <p class="Infos">Item : Galaxy Note 2</br></br> 
@@ -1223,12 +1223,6 @@ Bequator also offers competitive one-stop service for CD/VCD/DVD printing, from 
                 <h1>Details</h1>
             </div>
             <div data-role="content">
-                <div>
-                    <div style="float: left; width:20% !important;">
-                        <img src="images/img1.png" align="middle" style="float: left;" alt=""/>
-                    </div>
-                </div>
-                <div style="clear: both;"></div>
                 </br>
                 </br>
                 <div class="bgs">
@@ -1368,17 +1362,16 @@ Last month, a Samsung spokesperson confirmed that the Android OS in the company'
 		<script src="js/knockout-2.3.0.js"></script>
 		<script src="js/moment.min.js"></script>
 		<script src="js/common.js"></script>
-                <!--<script>
-			$(function()
-			{
-				$( "div.ledgers-global div div div form div div div span" ).on( "onclick", swipeHandler );
+                <script>
+                        $(function()
+			{ 			
+				$( "div.ledgers-global div div div form div div span" ).on( "click", swipeHandler );
 				function swipeHandler( event )
 				{
-					/*   $( event.target ).addClass( "swipe" );*/
-                                        $('div.ledgers-global div div div form div div div span .btn-blue').show();
-					alert('hi');
+					
+					 $("#mydiv").show();
 				}
 			});
-		</script>-->
+		</script>
     </body>
 </html>
