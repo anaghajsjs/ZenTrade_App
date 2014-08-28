@@ -1,0 +1,337 @@
+.mobile-custom *{
+    background:transparent;
+    border:none;
+    border-radius: 0;
+    box-shadow: none !important;
+    -webkit-box-shadow: none;
+    text-shadow:none;
+    text-decoration:none;
+    position:relative;
+    font-weight: 100;
+}
+
+.mobile-custom div[data-role="header"]{
+    height:auto;
+    line-height: 60px;
+    border: 1px #c2c2c2 /*{a-bar-border}*/;
+    background: #fff /*{a-bar-background-color}*/;
+    
+    font-weight: bold;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #1578d4 /*{a-bar-background-start}*/), to( #146fc3 /*{a-bar-background-end}*/));
+    background-image: -webkit-linear-gradient( #1578d4 /*{a-bar-background-start}*/, #146fc3 /*{a-bar-background-end}*/);
+    background-image: -moz-linear-gradient( #1578d4 /*{a-bar-background-start}*/, #146fc3 /*{a-bar-background-end}*/);
+    background-image: -ms-linear-gradient( #1578d4 /*{a-bar-background-start}*/, #146fc3 /*{a-bar-background-end}*/);
+    background-image: -o-linear-gradient( #1578d4 /*{a-bar-background-start}*/, #146fc3 /*{a-bar-background-end}*/);
+    background-image: linear-gradient( #fff /*{a-bar-background-start}*/, #fff /*{a-bar-background-end}*/);
+}
+
+[class*="iconsprite"]{
+    background:url(images/icon.png) no-repeat;
+    display:   inline-block;
+    z-index: 2;
+}
+[class*="alppsh"]{
+    height:65px;
+    width: 65px;
+    float: left;
+    position: relative;
+    top: 10px;
+    margin: 0 30px;
+}
+[class*="-mn-"]{
+    border-radius: 0;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    margin:5px !important;
+}
+[class*="-mn-"] .ui-btn-inner {
+
+    border: none;
+
+}
+[class*="-small-"]{
+    height:27px;
+    width: 25px;
+    position: absolute;
+    right: 6px;
+    top:0;
+    bottom: 19px;
+}
+
+.iconsprite-mn-bar{
+    background-position: -255px -93px;
+    float: left;
+    margin: auto;
+}
+.logb{
+	margin-bottom:10px;
+	}
+
+/* Portrait layout (default) */
+.app {
+    background:#f1bf3a url('../img/logo_in.png') no-repeat center top; /* 170px x 200px */
+    position:absolute;             /* position in the center of the screen */
+    left:0;
+	right:0;
+    top:30%;
+    height:auto;                   /* text area height */
+    width:225px;                   /* text area width */
+    text-align:center;
+    padding:225px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+    margin:auto;  /* offset vertical: half of image height and text area height */
+                                   /* offset horizontal: half of text area width */
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:700px) {
+    .app {
+        background-position:left 0;
+        padding:15px 0px 75px 200px;  /* padding-top + padding-bottom + text area = image height */
+        margin:auto;  /* offset vertical: half of image height */
+                                       /* offset horizontal: half of image width and text area width */
+    }
+
+}
+.mar{
+	
+	margin-top:20px;
+	
+	}
+.logbox{
+		margin:auto;
+		left:0;
+		right:0;
+		position:absolute;
+		width:50%;
+		top:0%;
+		}
+@media screen and (max-width:499px) {
+	
+	.logbox{
+		margin:auto;
+		left:0;
+		right:0;
+		position:absolute;
+		width:100% !important;
+		}
+		
+}
+/* Portrait layout (default) */
+.Products {
+    background:transparent no-repeat left center; /* 170px x 200px */
+    position:absolute;
+    left:50%;
+    top:20%;
+    height:100px;                   /* text area height */
+    width:225px;                   /* text area width */
+    text-align: center;
+    padding:225px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                               /* offset horizontal: half of text area width */
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .Products {
+        background-position:center center;
+        padding:75px 0px 75px 50px;  /* padding-top + padding-bottom + text area = image height */
+        margin:-20px 0px 0px -200px;  /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width */
+    }
+}
+
+h1 {
+    font-size:14px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background: #ffffff;
+  -webkit-box-shadow: inset 5px #000000;
+  -moz-box-shadow: inset 5px #000000;
+  -ms-box-shadow: inset 5px #000000;
+  -o-box-shadow: inset 5px #000000;
+  box-shadow: inset 5px #000000;
+  border: 1px solid #f1bf3a;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  width: 90%;
+  color: #586069 !important;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.btn{width: 98%;}
+.event.received {
+    background-color: #26252b;
+  background-image: -moz-linear-gradient(top, #2b2a31, #1f1e23);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2b2a31), to(#1f1e23));
+  background-image: -webkit-linear-gradient(top, #2b2a31, #1f1e23);
+  background-image: -o-linear-gradient(top, #2b2a31, #1f1e23);
+  background-image: linear-gradient(to bottom, #2b2a31, #1f1e23);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2b2a31', endColorstr='#ff1f1e23', GradientType=0);
+  -webkit-box-shadow: inset 5px #000000;
+  -moz-box-shadow: inset 5px #000000;
+  -ms-box-shadow: inset 5px #000000;
+  -o-box-shadow: inset 5px #000000;
+  box-shadow: inset 5px #000000;
+  border: 1px solid #37363e;
+  font-size: 18px;
+  height: auto;
+  padding: 10px;
+  color: #ffffff !important;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+}
+
+.cgtry ul li div{
+    padding: 10px 0 ;
+    background: #f1bf3a;
+}
+
+
+
+
+
+
+
+
+/* Responsive design             */
+
+@media screen and (-webkit-min-device-pixel-ratio: 0.5) {
+    .cgtry ul li div{
+        padding: 10px 0 ;
+        background: #f1bf3a;
+        
+    }   
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0.75) {
+  .cgtry ul li div{
+        padding: 15px 0 ;
+        background: #f1bf3a;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1) {
+  .cgtry ul li div{
+        padding: 20px 0 ;
+        background: #f1bf3a;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.3) {
+    .cgtry ul li div{
+        padding: 25px 0 ;
+        background: #f1bf3a;    
+    }   
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) {
+  .cgtry ul li div{
+        padding: 30px 0 ;
+        background: #f1bf3a;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .cgtry ul li div{
+        padding: 35px 0 ;
+        background: #f1bf3a;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3) {
+    .cgtry ul li div{
+        padding: 40px 0 ;
+        background: #f1bf3a;
+    }   
+}
+
+.boxlogo{
+	width:50%;
+	float:left;
+	}
+<<<<<<< HEAD
+.boxbutton{
+	width:50%;
+	float:left;
+	
+=======
+        
+.bgs_vis{
+	background-color: rgba(255, 255, 255, 1);
+        color: rgba(0, 0, 0, 1);
+	text-align:justify;
+	padding:15px;
+        margin-top:10px;
+        display:  none;
+	}
+        
+.bgsofr{
+	background-color: rgba(255, 255, 255, 1);
+        color: rgba(0, 0, 0, 1);
+	text-align:center;
+	padding:15px;
+	float: left;
+>>>>>>> FETCH_HEAD
+	}
+.loginbox{
+	width:30%;
+	margin:auto;
+	left:0;
+	right:0;
+	top:30%;
+	position:absolute;
+	
+	}
+	
+@media screen and (max-width:700px) {
+	
+	
+.btnc{
+	
+	width:100%;
+	}
+	
+	
+	
+<<<<<<< HEAD
+	}
+=======
+	}}
+        
+.Specs{
+    margin:0px;
+    text-align:left;
+    font-weight:bold;
+    font-size: 4vw;
+}
+
+.Infos{
+    margin:0px;
+    text-align:left;
+    font-size: 3vw !important;
+    text-align: justify;
+}
+
+.button-show{
+    color: white;
+}
+>>>>>>> FETCH_HEAD
