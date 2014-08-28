@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="viewport" content="user-scalable=no, initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, width=device-width, height=device-height, target-densitydpi=device-dpi"/>
+        <link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css"/>
+        <link href="css/style1.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/demo2.css">
+        <title>ZenTrade Application</title>
+        <style>
+            .main-menu-mobile { width: 90%;float: left; }
+            .ledgers-global { width: 100%;float: right; }
+        </style>
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body class="mobile-custom" onload="ExpiredOffers()">
+        <div id="Offers_Expired" class="ledgers-global background-white">
+            <div data-role="header" data-position="fixed">
+                <a href="mainmenu.html" class="iconsprite-mn-bar" data-transition="slide" data-direction="reverse" rel="external"></a>
+                <h1>Offers</h1>
+            </div>
+            
+            <nav data-role="navbar"  class="tabs-ledgers text-black main-menu-Zen-div">
+                <ul>
+                    <!--<li data-icon="false">
+                        <a href="alloffers.html" data-transition="fade" rel="external">All Offers</a>
+                    </li>-->
+                    <li data-icon="false">
+                        <a href="offerscurrent.html" data-transition="fade" rel="external">Current Offers</a>
+                    </li>
+                    <li class="active-ledgers" data-icon="false">
+                        <a href="offersexpired.html" class="ui-btn-active ui-state-persist" data-transition="fade" rel="external">Expired Offers</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div data-role="content" class="cgtry">
+                <ul data-role="listview" id='elist' data-inset="false" class="text-black text-grey">
+                    <!--<li data-icon="false">
+                        <a href="eofferdetails.html" data-transition="slide" rel="external">
+                            <div style="float: left; width:20%;">
+                                <img src="images/ofr2.png" align="middle" style="width: 100%;float: left;" alt=""/>
+                            </div>
+                            <div style="float: left; width:60%;">
+                                <h2>Expired great,Luckiest Offer First</h2>
+                                <p>Expired at 6th June</p>
+                            </div>
+                            <div style="float: right; width:20%;">
+                                <img src="images/arrow.png" align="middle" style="float: right; vertical-align: middle !important; margin-top: 30px;" alt=""/>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-icon="false">
+                        <a href="eofferdetails.html" data-transition="slide" rel="external">
+                            <div style="float: left; width:20%;">
+                                <img src="images/ofr2.png" align="middle" style="width: 100%;float: left;" alt=""/>
+                            </div>
+                            <div style="float: left; width:60%;">
+                                <h2>Expired great,Luckiest Offer Second</h2>
+                                <p>Expired at 2th June</p>
+                            </div>
+                            <div style="float: right; width:20%;">
+                                <img src="images/arrow.png" align="middle" style="float: right; vertical-align: middle !important; margin-top: 30px;" alt=""/>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-icon="false">
+                        <a href="eofferdetails.html" data-transition="slide" rel="external">
+                            <div style="float: left; width:20%;">
+                                <img src="images/ofr2.png" align="middle" style="width: 100%;float: left;" alt=""/>
+                            </div>
+                            <div style="float: left; width:60%;">
+                                <h2>Expired great,Luckiest Offer Third</h2>
+                                <p>Expired at 2nd June</p>
+                            </div>
+                            <div style="float: right; width:20%;">
+                                <img src="images/arrow.png" align="middle" style="float: right; vertical-align: middle !important; margin-top: 30px;" alt=""/>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-icon="false">
+                        <a href="eofferdetails.html" data-transition="slide" rel="external">
+                            <div style="float: left; width:20%;">
+                                <img src="images/ofr2.png" align="middle" style="width: 100%;float: left;" alt=""/>
+                            </div>
+                            <div style="float: left; width:60%;">
+                                <h2>Expired great,Luckiest Offer Fourth</h2>
+                                <p>Expired at 1st June</p>
+                            </div>
+                            <div style="float: right; width:20%;">
+                                <img src="images/arrow.png" align="middle" style="float: right; vertical-align: middle !important; margin-top: 30px;" alt=""/>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-icon="false">
+                        <a href="eofferdetails.html" data-transition="slide" rel="external">
+                            <div style="float: left; width:20%;">
+                                <img src="images/ofr2.png" align="middle" style="width: 100%;float: left;" alt=""/>
+                            </div>
+                            <div style="float: left; width:60%;">
+                                <h2>Expired great,Luckiest Offer Fifth</h2>
+                                <p>Expired at 26th May</p>
+                            </div>
+                            <div style="float: right; width:20%;">
+                                <img src="images/arrow.png" align="middle" style="float: right; vertical-align: middle !important; margin-top: 30px;" alt=""/>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-icon="false">
+                        <a href="eofferdetails.html" data-transition="slide" rel="external">
+                            <div style="float: left; width:20%;">
+                                <img src="images/ofr2.png" align="middle" style="width: 100%;float: left;" alt=""/>
+                            </div>
+                            <div style="float: left; width:60%;">
+                                <h2>Expired great,Luckiest Offer Sixth</h2>
+                                <p>Expired at 24th May</p>
+                            </div>
+                            <div style="float: right; width:20%;">
+                                <img src="images/arrow.png" align="middle" style="float: right; vertical-align: middle !important; margin-top: 30px;" alt=""/>
+                            </div>
+                        </a>
+                    </li>-->					
+                </ul>
+            </div>
+        </div>
+        
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.mobile-1.3.2.min.js"></script>
+		
+    </body>
+</html>

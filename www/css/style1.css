@@ -17,7 +17,7 @@
     border-bottom:1px solid #ececec ;
 }
 .mobile-custom div[data-role="header"]{
-    height:90px;
+    height:auto;
     line-height: 90px;
     border: 1px #c2c2c2 /*{a-bar-border}*/;
     background: #fff /*{a-bar-background-color}*/;
@@ -37,6 +37,7 @@
     position: absolute;
     right: 10px;
     top: 40%;
+    font-size: 20px;
     border:1px solid #ddd;
 }
 .mobile-custom .btn-archive *,
@@ -50,6 +51,11 @@
 .mobile-custom .btn-red{
     background: #db2828;
 }
+
+.btn-black{
+    background: #000000;
+}
+
 .mobile-custom .btn-blue{
      background: #4c4c4c; /* Old browsers */
 background: -moz-linear-gradient(top,  #4c4c4c 0%, #131313 100%); /* FF3.6+ */
@@ -338,6 +344,8 @@ text-decoration: underline;
 }
 .iconsprite-mn-bar{
     background-position: -255px -93px;
+    float: left;
+    margin: auto;
 }
 .iconsprite-mn-plus{
     background-position: -199px -149px;
@@ -708,12 +716,12 @@ text-decoration: underline;
 
 /*17/06/2014*/
 
-input{
+/*input{
   
   float: right;
     
     
-}
+}*/
 label{
 
   float: left;
@@ -730,7 +738,16 @@ label{
         color: rgba(0, 0, 0, 1);
 	text-align:justify;
 	padding:15px;
+        margin-top:50px;
+	}
+        
+.bgs_vis{
+	background-color: rgba(255, 255, 255, 1);
+        color: rgba(0, 0, 0, 1);
+	text-align:justify;
+	padding:15px;
         margin-top:10px;
+        display:  none;
 	}
         
 .bgsofr{
@@ -2403,4 +2420,8 @@ use translate instead of translate3d for the first move.
     text-align:left;
     font-size: 3vw !important;
     text-align: justify;
+}
+
+.button-show{
+    color: white;
 }

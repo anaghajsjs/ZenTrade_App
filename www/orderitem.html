@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Order Product</title>
+    <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+        <link href="css/style.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <script type="text/javascript" src="js/main.js"></script>
+  </head>
+  <body class="mobile-custom" style="margin: 0;padding: 0;" onload="LoadOrderPage()">
+    <div id="wrapper " class="logbox" style="width: 100% !important;">
+    <div data-role="header" data-position="fixed">
+      <a href="pricelist.html" class="iconsprite-mn-bar" data-transition="slide" data-direction="reverse" rel="external"></a>
+      <h1 style="font-size:3vh !important;">Order Product</h1>
+    </div>
+    <div style="clear: both;"></div>
+    <div class="Products">
+      <form id="convert" role="form" name='myForm'>
+        <div class="form-group">
+          <input type="text" class="event listening" id="ordprod" placeholder="Product Name" readonly/>
+        </div>
+        <div class="form-group">
+          <input type="text" class="event listening" id="ordqty" name='qty_text' onchange="getprice()" onfocus="clearText(this)" placeholder="Quantity" />
+        </div>
+        <div class="form-group">
+          <input type="text" class="event listening" id="ordprce" placeholder="Price" onfocus="clearText(this)" readonly/>
+        </div>
+        <div class="form-group">
+          <input id="submit" type="submit" class="event received btn" value="Submit" onclick="OrderItem()"/>
+        </div>
+      </form>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

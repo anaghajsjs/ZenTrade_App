@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Currency Converter</title>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+        <link href="css/style.css" rel="stylesheet">
+        <!--<link href="css/style1.css" rel="stylesheet">-->
+        <link href="css/app.css" rel="stylesheet">
+        <style>
+            .main-menu-mobile { width: 90%;float: left; }
+            .ledgers-global { width: 10%;float: right; }
+        </style>
+    </head>
+    <body class="mobile-custom" style="margin: 0;padding: 0;">
+        <div data-role="header" data-position="fixed" style="background-color: #ffffff;">
+            <a href="tools.html" class="iconsprite-mn-bar" data-transition="slide" data-direction="reverse" rel="external"></a>
+            <h1 id="logo">Weight Converter</h1>
+        </div>
+        <!--<header>
+            <a href="mainmenu.html" class="iconsprite-mn-bar" data-transition="slide" data-direction="reverse" rel="external"></a>
+            <h3 id="logo">Currency Converter</h3>
+        </header>-->
+        <!--<div style="clear: both;"></div>-->
+        <div id="wrapper" class="Products">
+            <form id="convert" role="form">
+                <div >
+                    <input type="number" data-type="double" class="event listening" id="data" placeholder="Enter amount to convert" value="1" />
+                </div>
+                <div >
+                    <select name="from" id="from" class="event listening">
+                        <option value="">Convert From</option>
+                        <option value="Grains">Grains</option>
+                        <option value="Scruples">Scruples</option>
+                        <option value="Carats">Carats</option>
+                        <option value="Grams">Grams</option>
+                        <option value="Pennyweight">Pennyweight</option>
+                        <option value="DramAvoir">DramAvoir</option>
+                        <option value="DramApoth">DramApoth</option>
+                        <option value="OuncesAvoir">OuncesAvoir</option>
+                        <option value="OuncesTroyApoth">OuncesTroyApoth</option>
+                        <option value="Poundals">Poundals</option>
+                        <option value="PoundsTroy">PoundsTroy</option>
+                        <option value="PoundsAvoir">PoundsAvoir</option>
+                        <option value="Kilograms">Kilograms</option>
+                        <option value="Stones">Stones</option>
+                        <option value="QuarterUS">QuarterUS</option>
+                        <option value="Slugs">Slugs</option>
+                        <option value="weight100UScwt">weight100UScwt</option>
+                        <option value="ShortTons">ShortTons</option>
+                        <option value="MetricTonsTonne">MetricTonsTonne</option>
+                        <option value="LongTons">LongTons</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="to" id="to" class="event listening">
+                        <option value="">Convert To</option>
+                        <option value="Grains">Grains</option>
+                        <option value="Scruples">Scruples</option>
+                        <option value="Carats">Carats</option>
+                        <option value="Grams">Grams</option>
+                        <option value="Pennyweight">Pennyweight</option>
+                        <option value="DramAvoir">DramAvoir</option>
+                        <option value="DramApoth">DramApoth</option>
+                        <option value="OuncesAvoir">OuncesAvoir</option>
+                        <option value="OuncesTroyApoth">OuncesTroyApoth</option>
+                        <option value="Poundals">Poundals</option>
+                        <option value="PoundsTroy">PoundsTroy</option>
+                        <option value="PoundsAvoir">PoundsAvoir</option>
+                        <option value="Kilograms">Kilograms</option>
+                        <option value="Stones">Stones</option>
+                        <option value="QuarterUS">QuarterUS</option>
+                        <option value="Slugs">Slugs</option>
+                        <option value="weight100UScwt">weight100UScwt</option>
+                        <option value="ShortTons">ShortTons</option>
+                        <option value="MetricTonsTonne">MetricTonsTonne</option>
+                        <option value="LongTons">LongTons</option>
+                    </select>
+                </div>
+                <div >
+                    <input id="submit" type="submit" class="event received" value="Convert" onclick="WeightConvert()" />
+                </div>
+            </form>
+            <!--<div id="result">27,000.00</div>-->
+        </div>
+        
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="js/Converter-functions.js"></script>
+        
+  </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Currency Converter</title>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+        <link href="css/style.css" rel="stylesheet">
+        <!--<link href="css/style1.css" rel="stylesheet">-->
+        <link href="css/app.css" rel="stylesheet">
+        <style>
+            .main-menu-mobile { width: 90%;float: left; }
+            .ledgers-global { width: 10%;float: right; }
+        </style>
+    </head>
+    <body class="mobile-custom" style="margin: 0;padding: 0;">
+        <div data-role="header" data-position="relative">
+            <a href="tools.html" class="iconsprite-mn-bar" data-transition="slide" data-direction="reverse" rel="external"></a>
+            <h1 id="logo">Volume Converter</h1>
+        </div>
+        <!--<header>
+            <a href="mainmenu.html" class="iconsprite-mn-bar" data-transition="slide" data-direction="reverse" rel="external"></a>
+            <h3 id="logo">Currency Converter</h3>
+        </header>-->
+        <!--<div style="clear: both;"></div>-->
+        <div id="wrapper" class="Products">
+            <form id="convert" role="form">
+                <div>
+                    <input type="number" data-type="number" class="event listening" id="data" placeholder="Enter amount to convert" value="1" />
+                </div>
+                <div>
+                    <select name="from" id="from" class="event listening">
+                        <option value="">Convert From</option>
+                        <option value="acreFoot">acreFoot</option>
+                        <option value="acreFootUSSurvey">acreFootUSSurvey</option>
+                        <option value="acreInch">acreInch</option>
+                        <option value="barrelUKwine">barrelUKwine</option>
+                        <option value="barrelUK">barrelUK</option>
+                        <option value="barrelUSDry">barrelUSDry</option>
+                        <option value="barrelUSFederal">barrelUSFederal</option>
+                        <option value="barrelUSLiquid">barrelUSLiquid</option>
+                        <option value="barrelUSPetroleum">barrelUSPetroleum</option>
+                        <option value="barrelUSSpirits">barrelUSSpirits</option>
+                        <option value="boardFoot">boardFoot</option>
+                        <option value="bucketUK">bucketUK</option>
+                        <option value="bushelUK">bushelUK</option>
+                        <option value="bushelUS">bushelUS</option>
+                        <option value="dry">dry</option>
+                        <option value="centiliter">centiliter</option>
+                        <option value="cordFirewood">cordFirewood</option>
+                        <option value="cordFootTimber">cordFootTimber</option>
+                        <option value="cubicCentimeterCC">cubicCentimeterCC</option>
+                        <option value="cubicCubitAncientEgypt">cubicCubitAncientEgypt</option>
+                        <option value="cubicDecimeter">cubicDecimeter</option>
+                        <option value="cubicDekameter">cubicDekameter</option>
+                        <option value="cubicFoot">cubicFoot</option>
+                        <option value="cubicInch">cubicInch</option>
+                        <option value="cubicKilometer">cubicKilometer</option>
+                        <option value="cubicMeter">cubicMeter</option>
+                        <option value="cubicMile">cubicMile</option>
+                        <option value="cubicMillimeter">cubicMillimeter</option>
+                        <option value="cubicYard">cubicYard</option>
+                        <option value="cupCanada">cupCanada</option>
+                        <option value="cupMetric">cupMetric</option>
+                        <option value="cupUS">cupUS</option>
+                        <option value="deciliter">deciliter</option>
+                        <option value="dekaliter">dekaliter</option>
+                        <option value="fifth">fifth</option>
+                        <option value="gallonUK">gallonUK</option>
+                        <option value="gallonUSDry">gallonUSDry</option>
+                        <option value="gallonUSLiquid">gallonUSLiquid</option>
+                        <option value="gillUK">gillUK</option>
+                        <option value="gillUS">gillUS</option>
+                        <option value="hectareMeter">hectareMeter</option>
+                        <option value="hectoliter">hectoliter</option>
+                        <option value="hogsheadUK">hogsheadUK</option>
+                        <option value="hogsheadUS">hogsheadUS</option>
+                        <option value="jigger">jigger</option>
+                        <option value="kiloliter">kiloliter</option>
+                        <option value="liter">liter</option>
+                        <option value="measureAncientHebrew">measureAncientHebrew</option>
+                        <option value="megaliter">megaliter</option>
+                        <option value="microliter">microliter</option>
+                        <option value="milliliter">milliliter</option>
+                        <option value="ounceUKLiquid">ounceUKLiquid</option>
+                        <option value="ounceUSLiquid">ounceUSLiquid</option>
+                        <option value="peckUK">peckUK</option>
+                        <option value="peckUS">peckUS</option>
+                        <option value="pintUK">pintUK</option>
+                        <option value="pintUSDry">pintUSDry</option>
+                        <option value="pintUSLiquid">pintUSLiquid</option>
+                        <option value="pipeUK">pipeUK</option>
+                        <option value="pipeUS">pipeUS</option>
+                        <option value="pony">pony</option>
+                        <option value="quartGermany">quartGermany</option>
+                        <option value="quartAncientHebrew">quartAncientHebrew</option>
+                        <option value="quartUK">quartUK</option>
+                        <option value="quartUSDry">quartUSDry</option>
+                        <option value="quartUSLiquid">quartUSLiquid</option>
+                        <option value="quarterUKLiquid">quarterUKLiquid</option>
+                        <option value="scrupleUKLiquid">scrupleUKLiquid</option>
+                        <option value="stere">stere</option>
+                    </select>
+                </div>
+                <div >
+                    <select name="to" id="to" class="event listening">
+                        <option value="">Convert To</option>
+                        <option value="acreFoot">acreFoot</option>
+                        <option value="acreFootUSSurvey">acreFootUSSurvey</option>
+                        <option value="acreInch">acreInch</option>
+                        <option value="barrelUKwine">barrelUKwine</option>
+                        <option value="barrelUK">barrelUK</option>
+                        <option value="barrelUSDry">barrelUSDry</option>
+                        <option value="barrelUSFederal">barrelUSFederal</option>
+                        <option value="barrelUSLiquid">barrelUSLiquid</option>
+                        <option value="barrelUSPetroleum">barrelUSPetroleum</option>
+                        <option value="barrelUSSpirits">barrelUSSpirits</option>
+                        <option value="boardFoot">boardFoot</option>
+                        <option value="bucketUK">bucketUK</option>
+                        <option value="bushelUK">bushelUK</option>
+                        <option value="bushelUS">bushelUS</option>
+                        <option value="dry">dry</option>
+                        <option value="centiliter">centiliter</option>
+                        <option value="cordFirewood">cordFirewood</option>
+                        <option value="cordFootTimber">cordFootTimber</option>
+                        <option value="cubicCentimeterCC">cubicCentimeterCC</option>
+                        <option value="cubicCubitAncientEgypt">cubicCubitAncientEgypt</option>
+                        <option value="cubicDecimeter">cubicDecimeter</option>
+                        <option value="cubicDekameter">cubicDekameter</option>
+                        <option value="cubicFoot">cubicFoot</option>
+                        <option value="cubicInch">cubicInch</option>
+                        <option value="cubicKilometer">cubicKilometer</option>
+                        <option value="cubicMeter">cubicMeter</option>
+                        <option value="cubicMile">cubicMile</option>
+                        <option value="cubicMillimeter">cubicMillimeter</option>
+                        <option value="cubicYard">cubicYard</option>
+                        <option value="cupCanada">cupCanada</option>
+                        <option value="cupMetric">cupMetric</option>
+                        <option value="cupUS">cupUS</option>
+                        <option value="deciliter">deciliter</option>
+                        <option value="dekaliter">dekaliter</option>
+                        <option value="fifth">fifth</option>
+                        <option value="gallonUK">gallonUK</option>
+                        <option value="gallonUSDry">gallonUSDry</option>
+                        <option value="gallonUSLiquid">gallonUSLiquid</option>
+                        <option value="gillUK">gillUK</option>
+                        <option value="gillUS">gillUS</option>
+                        <option value="hectareMeter">hectareMeter</option>
+                        <option value="hectoliter">hectoliter</option>
+                        <option value="hogsheadUK">hogsheadUK</option>
+                        <option value="hogsheadUS">hogsheadUS</option>
+                        <option value="jigger">jigger</option>
+                        <option value="kiloliter">kiloliter</option>
+                        <option value="liter">liter</option>
+                        <option value="measureAncientHebrew">measureAncientHebrew</option>
+                        <option value="megaliter">megaliter</option>
+                        <option value="microliter">microliter</option>
+                        <option value="milliliter">milliliter</option>
+                        <option value="ounceUKLiquid">ounceUKLiquid</option>
+                        <option value="ounceUSLiquid">ounceUSLiquid</option>
+                        <option value="peckUK">peckUK</option>
+                        <option value="peckUS">peckUS</option>
+                        <option value="pintUK">pintUK</option>
+                        <option value="pintUSDry">pintUSDry</option>
+                        <option value="pintUSLiquid">pintUSLiquid</option>
+                        <option value="pipeUK">pipeUK</option>
+                        <option value="pipeUS">pipeUS</option>
+                        <option value="pony">pony</option>
+                        <option value="quartGermany">quartGermany</option>
+                        <option value="quartAncientHebrew">quartAncientHebrew</option>
+                        <option value="quartUK">quartUK</option>
+                        <option value="quartUSDry">quartUSDry</option>
+                        <option value="quartUSLiquid">quartUSLiquid</option>
+                        <option value="quarterUKLiquid">quarterUKLiquid</option>
+                        <option value="scrupleUKLiquid">scrupleUKLiquid</option>
+                        <option value="stere">stere</option>
+                    </select>
+                </div>
+                <div>
+                    <input id="submit" type="submit" class="event received" value="Convert" onclick="VolumeConvert()" />
+                </div>
+            </form>
+            <!--<div id="result">27,000.00</div>-->
+        </div>
+        
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="js/Converter-functions.js"></script>
+        
+  </body>
+</html>
